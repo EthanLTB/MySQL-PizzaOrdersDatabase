@@ -16,12 +16,8 @@ VALUES ('2014-10-09 13:20:00', 2);
 
 INSERT INTO `orders` (`order_date_time`, `customer_id`)
 VALUES ('2014-10-09 9:47:00', 1);
-update orders
-set order_date_time ='2014-10-09 9:50:00'
-where orders.order_id = 3;
 
 select * from orders;
-
 
 INSERT INTO  `pizzas` (`pizza_name`, `price`)
 VALUES ('Pepperoni & Cheese', 7.99);
@@ -36,6 +32,7 @@ INSERT INTO  `pizzas` (`pizza_name`, `price`)
 VALUES ('Hawaiian', 12.99);
 
 select * from pizzas;
+
 -- order 1
 INSERT INTO `order_details`(`order_id`, `pizza_id`, `quantity`)
 VALUES(1, 1, 1);
